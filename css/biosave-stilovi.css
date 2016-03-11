@@ -4,9 +4,99 @@ html {
 }
 body {
 	margin: 0 auto;
-	background: #152E50;
+	background: black;
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 	/*	overflow: hidden;*/
 	/* Sakrivamo overflow da bi smo ubili sistemski scrollbar, treba ga pokazati na mobilnima, gde se vracamo na sistemski scroll */
+}
+h1 {
+	font-size: 5rem;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 1.8rem;
+	letter-spacing: 2px;
+}
+.upperLeft {
+	position: fixed;
+	top: 20px;
+	left: 40px;
+}
+.upperRight {
+	position: fixed;
+	top: 40px;
+	right: 50px;
+}
+.zastor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.slogan {
+	position: fixed;
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	top: 40vh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.mouse {
+	display: inline-block;
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 45px;
+	border: 2px solid white;
+	border-radius: 15px;
+	transition: all 0.5s linear;
+}
+.wheel {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	width: 4px;
+	height: 8px;
+	border-radius: 2px;
+	background-color: #fff;
+	animation: moveWheel 1.5s linear infinite;
+}
+@keyframes moveWheel {
+	0% {
+		top: 10px;
+		opacity: 1;
+	}
+	35% {
+		top: 20px;
+		opacity: 1;
+	}
+	60% {
+		top: 20px;
+		opacity: 0;
+	}
+	100% {
+		top: 20px;
+		opacity: 0;
+	}
+}
+#video-background {
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	overflow: hidden;
 }
