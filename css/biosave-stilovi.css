@@ -1,0 +1,12 @@
+html {
+	font-size: 12.5px;
+	font-weight: lighter;
+}
+body {
+	margin: 0 auto;
+	background: #152E50;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	/*	overflow: hidden;*/
+	/* Sakrivamo overflow da bi smo ubili sistemski scrollbar, treba ga pokazati na mobilnima, gde se vracamo na sistemski scroll */
+}
